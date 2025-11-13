@@ -17,10 +17,10 @@ app.secret_key = os.getenv("FLASK_SECRET") or "chave_padrao_local_teste"
 
 # Configurações do banco de dados
 DB_CONFIG = {
-    "host": os.getenv("DB_HOST", "localhost"),
+    "host": os.getenv("DB_HOST", "mysql.railway.internal"),
     "user": os.getenv("DB_USER", "root"),
-    "password": os.getenv("DB_PASS", ""),
-    "database": os.getenv("DB_NAME", "clockdb")
+    "password": os.getenv("DB_PASS", ""), 
+    "database": os.getenv("DB_NAME", "railway")
 }
 
 ADMIN_USER = os.getenv('ADMIN_USER', 'admin')
